@@ -5,7 +5,7 @@ import folium.plugins as plugins #custom icon
 
 
 
-fp = r"C:\Users\MINA\Documents\Fun maps\custon travel map\travel_data.csv"
+fp = "travel_data.csv"
 data = pd.read_csv(fp, sep = ",")
 #print(data)
 
@@ -28,4 +28,4 @@ for index , row in data.iterrows():
     ).add_to(places)
     
 #save map to the file
-places.save('my_travel_map.html')
+places.save('index.html')
