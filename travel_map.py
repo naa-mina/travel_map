@@ -1,8 +1,9 @@
+import streamlit as st
 import folium.map
 import pandas as pd
 import folium
 import folium.plugins as plugins #custom icon
-
+from streamlit_folium import st_folium
 
 
 fp = "travel_data.csv"
@@ -29,3 +30,9 @@ for index , row in data.iterrows():
     
 #save map to the file
 places.save('index.html')
+
+#creating the streamlit map
+st.title("My Travel Map")
+
+#displaying in streamlit
+st_folium(places,width=700)
