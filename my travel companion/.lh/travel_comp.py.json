@@ -1,0 +1,186 @@
+{
+    "sourceFile": "travel_comp.py",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 42,
+            "patches": [
+                {
+                    "date": 1746838346173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1746838351425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838372877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi'\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838644492,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,8 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n"
+                },
+                {
+                    "date": 1746838711115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838724408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838730510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd.re\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838736663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd.read_csv(f)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838742069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,9 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd.read_csv(fp, sep)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838749766,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,73 +5,5 @@\n import folium.plugins as plugins #custom icon\r\n from streamlit_folium import st_folium\r\n \r\n fp = 'kigali_poi.csv'\r\n-data = pd.read_csv(fp, sep)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-data = pd.read_csv(f)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-data = pd.re\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-data = pd\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-data\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi'\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali'\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = ''\n\\ No newline at end of file\n+data = pd.read_csv(fp, sep=\"\")\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838756785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+print()\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838762861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+print(data.hea)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838816688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,29 +1,10 @@\n-import streamlit as st\r\n+#import streamlit as st\r\n import folium.map\r\n import pandas as pd\r\n import folium\r\n import folium.plugins as plugins #custom icon\r\n from streamlit_folium import st_folium\r\n \r\n fp = 'kigali_poi.csv'\r\n data = pd.read_csv(fp, sep=\",\")\r\n-print(data.hea)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-print()\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n\\ No newline at end of file\n-data = pd.read_csv(fp, sep=\"\")\n+print(data.head())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838830794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #import streamlit as st\r\n-import folium.map\r\n+#import folium.map\r\n import pandas as pd\r\n import folium\r\n import folium.plugins as plugins #custom icon\r\n from streamlit_folium import st_folium\r\n"
+                },
+                {
+                    "date": 1746838839351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+#import streamlit as st\r\n+#import folium.map\r\n+import pandas as pd\r\n+#import folium\r\n+#import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = 'kigali_poi.csv'\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+print(data.head())\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746838902540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,19 +2,9 @@\n #import folium.map\r\n import pandas as pd\r\n #import folium\r\n #import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n+#from streamlit_folium import st_folium\r\n \r\n fp = 'kigali_poi.csv'\r\n data = pd.read_csv(fp, sep=\",\")\r\n-print(data.head())\n-#import streamlit as st\r\n-#import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = 'kigali_poi.csv'\r\n-data = pd.read_csv(fp, sep=\",\")\r\n\\ No newline at end of file\n-print(data.head())\n+print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839286350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n #import folium\r\n #import folium.plugins as plugins #custom icon\r\n #from streamlit_folium import st_folium\r\n \r\n-fp = 'kigali_poi.csv'\r\n+fp = r'kigali_poi.csv'\r\n data = pd.read_csv(fp, sep=\",\")\r\n print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839314432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n #import folium\r\n #import folium.plugins as plugins #custom icon\r\n #from streamlit_folium import st_folium\r\n \r\n-fp = r'kigali_poi.csv'\r\n+fp = rkigai_poi.csv\r\n data = pd.read_csv(fp, sep=\",\")\r\n print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839322142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n #import folium\r\n #import folium.plugins as plugins #custom icon\r\n #from streamlit_folium import st_folium\r\n \r\n-fp = rkigai_poi.csv\r\n+fp = \r\n data = pd.read_csv(fp, sep=\",\")\r\n print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839329669,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,7 +4,7 @@\n #import folium\r\n #import folium.plugins as plugins #custom icon\r\n #from streamlit_folium import st_folium\r\n \r\n-fp = \r\n+fp = C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\r\n data = pd.read_csv(fp, sep=\",\")\r\n print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839338611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+#import streamlit as st\r\n+#import folium.map\r\n+import pandas as pd\r\n+#import folium\r\n+#import folium.plugins as plugins #custom icon\r\n+#from streamlit_folium import st_folium\r\n+\r\n+fp = \"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839499932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,20 +1,10 @@\n-#import streamlit as st\r\n+import streamlit as st\r\n #import folium.map\r\n import pandas as pd\r\n #import folium\r\n #import folium.plugins as plugins #custom icon\r\n #from streamlit_folium import st_folium\r\n \r\n-fp = \"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n data = pd.read_csv(fp, sep=\",\")\r\n-print(data)\n-#import streamlit as st\r\n-#import folium.map\r\n-import pandas as pd\r\n-#import folium\r\n-#import folium.plugins as plugins #custom icon\r\n-#from streamlit_folium import st_folium\r\n-\r\n-fp = C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\r\n-data = pd.read_csv(fp, sep=\",\")\r\n print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839505030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+#import folium.plugins as plugins #custom icon\r\n+#from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839516074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,10 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839543510,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n"
+                },
+                {
+                    "date": 1746839551824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+Initi\r\n+st.title(\"My Travel Map\")\r\n+\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839569222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,50 +8,9 @@\n fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n data = pd.read_csv(fp, sep=\",\")\r\n #print(data)\r\n \r\n-Initi\r\n+#Initializing as streamlit ma\r\n st.title(\"My Travel Map\")\r\n \r\n #displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-#import folium.plugins as plugins #custom icon\r\n-#from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-print(data)\n-import streamlit as st\r\n-#import folium.map\r\n-import pandas as pd\r\n-#import folium\r\n-#import folium.plugins as plugins #custom icon\r\n-#from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n\\ No newline at end of file\n-print(data)\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839590708,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Map\")\r\n+st\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839826913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel \")\r\n+st.\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839835221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839841692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839848255,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app \")\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839861293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive \")\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839870090,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive map that allows you to \")\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839915162,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to \")\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839921851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to lookup \")\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839932148,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,16 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n+#displaying in streamlit\r\n+st_folium(places,width=700)\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839944096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n+#displaying in streamli\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746839966938,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n"
+                },
+                {
+                    "date": 1746840034936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n+st.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746840041646,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,210 +11,5 @@\n \r\n #Initializing as streamlit app\r\n st.title(\"My Travel Companion\")\r\n st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n-st.\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n-#displaying in streamli\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive GIS map that allows you to lookup \")\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive GIS map that allows you to \")\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive map that allows you to \")\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app shows an interactive \")\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write(\"This app \")\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.write\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Companion\")\r\n-st.\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel \")\r\n-st.\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit app\r\n-st.title(\"My Travel Map\")\r\n-st\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n-import streamlit as st\r\n-import folium.map\r\n-import pandas as pd\r\n-import folium\r\n-import folium.plugins as plugins #custom icon\r\n-from streamlit_folium import st_folium\r\n-\r\n-fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n-data = pd.read_csv(fp, sep=\",\")\r\n-#print(data)\r\n-\r\n-#Initializing as streamlit ma\r\n-st.title(\"My Travel Map\")\r\n-\r\n-#displaying in streamlit\r\n-st_folium(places,width=700)\n\\ No newline at end of file\n+st.sid\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746840051723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,5 @@\n \r\n #Initializing as streamlit app\r\n st.title(\"My Travel Companion\")\r\n st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n-st.sidebar\n\\ No newline at end of file\n+st.sidebar.\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1746840221721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,15 @@\n+import streamlit as st\r\n+import folium.map\r\n+import pandas as pd\r\n+import folium\r\n+import folium.plugins as plugins #custom icon\r\n+from streamlit_folium import st_folium\r\n+\r\n+fp = r\"C:\\Users\\MINA\\Documents\\Fun maps\\web app\\kigai_poi.csv\"\r\n+data = pd.read_csv(fp, sep=\",\")\r\n+#print(data)\r\n+\r\n+#Initializing as streamlit app\r\n+st.title(\"My Travel Companion\")\r\n+st.write(\"This app shows an interactive GIS map that allows you to lookup interesting places in your area\")\r\n+st.sidebar.header()\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1746838346173,
+            "name": "Commit-0",
+            "content": "import streamlit as st\r\nimport folium.map\r\nimport pandas as pd\r\nimport folium\r\nimport folium.plugins as plugins #custom icon\r\nfrom streamlit_folium import st_folium\r\n\r\nfp = ''"
+        }
+    ]
+}
