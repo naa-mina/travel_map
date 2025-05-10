@@ -1,0 +1,1421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_de2b01a925747853b84de3f24c44199d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/marslan390/BeautifyMarker/leaflet-beautify-marker-icon.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_div {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_de2b01a925747853b84de3f24c44199d" ></div>
+        
+    
+            <div class="folium-map" id="map_div" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_de2b01a925747853b84de3f24c44199d = L.map(
+                "map_de2b01a925747853b84de3f24c44199d",
+                {
+                    center: [-1.9445401885863784, 30.08988685088784],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2560481245b86acf91ba82ef16a883f2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2560481245b86acf91ba82ef16a883f2.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var tile_layer_a1cea25331978d4cb74b59674a8e1570 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a1cea25331978d4cb74b59674a8e1570.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var tile_layer_45c0e0d3ed6dc997565cf0174a16bf4a = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_45c0e0d3ed6dc997565cf0174a16bf4a.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var layer_control_7a400ee0df2bc6e598dc5f85b4d82df0_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_a1cea25331978d4cb74b59674a8e1570,
+                    "Esri Satellite" : tile_layer_45c0e0d3ed6dc997565cf0174a16bf4a,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_7a400ee0df2bc6e598dc5f85b4d82df0 = L.control.layers(
+                layer_control_7a400ee0df2bc6e598dc5f85b4d82df0_layers.base_layers,
+                layer_control_7a400ee0df2bc6e598dc5f85b4d82df0_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+
+        
+    
+            var marker_5cd22322f1b8e0a6852b6715cd92bd4a = L.marker(
+                [-1.955970749, 30.06043975],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_4ee5171fd157e0905ed8e2d71551d6fe = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_5cd22322f1b8e0a6852b6715cd92bd4a.setIcon(beautify_icon_4ee5171fd157e0905ed8e2d71551d6fe);
+        
+    
+        var popup_dc9e9369491257c9b676b720251c7483 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_945d3bd9addaca8e47ad1adc39aecc0b = $(`<div id="html_945d3bd9addaca8e47ad1adc39aecc0b" style="width: 100.0%; height: 100.0%;">CHUK (University Teaching Hospital)<br>Health facility<br>KN 4 Ave, Kigali, Rwanda</div>`)[0];
+                popup_dc9e9369491257c9b676b720251c7483.setContent(html_945d3bd9addaca8e47ad1adc39aecc0b);
+            
+        
+
+        marker_5cd22322f1b8e0a6852b6715cd92bd4a.bindPopup(popup_dc9e9369491257c9b676b720251c7483)
+        ;
+
+        
+    
+    
+                marker_5cd22322f1b8e0a6852b6715cd92bd4a.setIcon(beautify_icon_4ee5171fd157e0905ed8e2d71551d6fe);
+            
+    
+            var marker_51ebcfd430c16248bb5155f2ed5a366e = L.marker(
+                [-1.933194477, 30.07475407],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_e5879a0664ea8d2d1bab2ee156c5bf05 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_51ebcfd430c16248bb5155f2ed5a366e.setIcon(beautify_icon_e5879a0664ea8d2d1bab2ee156c5bf05);
+        
+    
+        var popup_f466914bf21f42acda6d92c124849138 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33275f0a037572610d0826389d36e720 = $(`<div id="html_33275f0a037572610d0826389d36e720" style="width: 100.0%; height: 100.0%;">KACYIRU HOSPITAL<br>Health facility<br>KN 8 Ave, Kigali, Rwanda</div>`)[0];
+                popup_f466914bf21f42acda6d92c124849138.setContent(html_33275f0a037572610d0826389d36e720);
+            
+        
+
+        marker_51ebcfd430c16248bb5155f2ed5a366e.bindPopup(popup_f466914bf21f42acda6d92c124849138)
+        ;
+
+        
+    
+    
+                marker_51ebcfd430c16248bb5155f2ed5a366e.setIcon(beautify_icon_e5879a0664ea8d2d1bab2ee156c5bf05);
+            
+    
+            var marker_573000c8ca5e7e1f88163711eb2ce5d7 = L.marker(
+                [-1.936713044, 30.05803851],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_11fdb28236264730b4238ab5add0530f = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_573000c8ca5e7e1f88163711eb2ce5d7.setIcon(beautify_icon_11fdb28236264730b4238ab5add0530f);
+        
+    
+        var popup_28c0964f603cf136640bb3cb1f2ff150 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba053eda9aecfba25b5dd480de02e214 = $(`<div id="html_ba053eda9aecfba25b5dd480de02e214" style="width: 100.0%; height: 100.0%;">MUHIMA HOSPITAL<br>Health facility<br>KN 13 St, Kigali, Rwanda</div>`)[0];
+                popup_28c0964f603cf136640bb3cb1f2ff150.setContent(html_ba053eda9aecfba25b5dd480de02e214);
+            
+        
+
+        marker_573000c8ca5e7e1f88163711eb2ce5d7.bindPopup(popup_28c0964f603cf136640bb3cb1f2ff150)
+        ;
+
+        
+    
+    
+                marker_573000c8ca5e7e1f88163711eb2ce5d7.setIcon(beautify_icon_11fdb28236264730b4238ab5add0530f);
+            
+    
+            var marker_0938aa98df24f921ae20380855e425ea = L.marker(
+                [-1.930780773, 30.11193853],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_dd3cb1b3c425baf76a45eb55ea682123 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_0938aa98df24f921ae20380855e425ea.setIcon(beautify_icon_dd3cb1b3c425baf76a45eb55ea682123);
+        
+    
+        var popup_3d0f5d775688dc6286d7630b40583604 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95831c31b9affe1b384485733f319074 = $(`<div id="html_95831c31b9affe1b384485733f319074" style="width: 100.0%; height: 100.0%;">KIBAGABAGA HOSPITAL<br>Health facility<br>KG 19 Ave, Kigali, Rwanda</div>`)[0];
+                popup_3d0f5d775688dc6286d7630b40583604.setContent(html_95831c31b9affe1b384485733f319074);
+            
+        
+
+        marker_0938aa98df24f921ae20380855e425ea.bindPopup(popup_3d0f5d775688dc6286d7630b40583604)
+        ;
+
+        
+    
+    
+                marker_0938aa98df24f921ae20380855e425ea.setIcon(beautify_icon_dd3cb1b3c425baf76a45eb55ea682123);
+            
+    
+            var marker_1fdb2b587993e75208a7c43d6bb80f96 = L.marker(
+                [-1.978603661, 30.16795712],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_4eb7cfad7f5b6a6e39b55b3d5ea77707 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_1fdb2b587993e75208a7c43d6bb80f96.setIcon(beautify_icon_4eb7cfad7f5b6a6e39b55b3d5ea77707);
+        
+    
+        var popup_4392cea37d60c5956d914e36be20dd39 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2282d9c57996267016ff54e316b132ae = $(`<div id="html_2282d9c57996267016ff54e316b132ae" style="width: 100.0%; height: 100.0%;">RWANDA MILITARY HOSPITAL<br>Health facility<br>25C9+H57, Kigali, Rwanda</div>`)[0];
+                popup_4392cea37d60c5956d914e36be20dd39.setContent(html_2282d9c57996267016ff54e316b132ae);
+            
+        
+
+        marker_1fdb2b587993e75208a7c43d6bb80f96.bindPopup(popup_4392cea37d60c5956d914e36be20dd39)
+        ;
+
+        
+    
+    
+                marker_1fdb2b587993e75208a7c43d6bb80f96.setIcon(beautify_icon_4eb7cfad7f5b6a6e39b55b3d5ea77707);
+            
+    
+            var marker_90c50ffd7ebf154770958bc4808b6c37 = L.marker(
+                [-1.943636019, 30.09528767],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_795d89d7fd987086893f38fe4df8cb23 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_90c50ffd7ebf154770958bc4808b6c37.setIcon(beautify_icon_795d89d7fd987086893f38fe4df8cb23);
+        
+    
+        var popup_6407080e8fba2f21d81cc23ae40b1ae1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a1c335ab5fb71a78ea14d35d15bf4f0 = $(`<div id="html_0a1c335ab5fb71a78ea14d35d15bf4f0" style="width: 100.0%; height: 100.0%;">KING FAISAL HOSPITAL<br>Health facility<br>KG 544 St, Kigali, Rwanda</div>`)[0];
+                popup_6407080e8fba2f21d81cc23ae40b1ae1.setContent(html_0a1c335ab5fb71a78ea14d35d15bf4f0);
+            
+        
+
+        marker_90c50ffd7ebf154770958bc4808b6c37.bindPopup(popup_6407080e8fba2f21d81cc23ae40b1ae1)
+        ;
+
+        
+    
+    
+                marker_90c50ffd7ebf154770958bc4808b6c37.setIcon(beautify_icon_795d89d7fd987086893f38fe4df8cb23);
+            
+    
+            var marker_65d23075079eeced05ce6caf4dccae35 = L.marker(
+                [-1.954468536, 30.16888575],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_1e486b74fa677151ef2fe92f16ca20a3 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_65d23075079eeced05ce6caf4dccae35.setIcon(beautify_icon_1e486b74fa677151ef2fe92f16ca20a3);
+        
+    
+        var popup_d102510523fb9e91b892de51e59ef784 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9b6c2feece9daacc0417dd307083d70 = $(`<div id="html_e9b6c2feece9daacc0417dd307083d70" style="width: 100.0%; height: 100.0%;">NDERA HOSPITAL<br>Health facility<br>25W9+4FQ, Kigali, Rwanda</div>`)[0];
+                popup_d102510523fb9e91b892de51e59ef784.setContent(html_e9b6c2feece9daacc0417dd307083d70);
+            
+        
+
+        marker_65d23075079eeced05ce6caf4dccae35.bindPopup(popup_d102510523fb9e91b892de51e59ef784)
+        ;
+
+        
+    
+    
+                marker_65d23075079eeced05ce6caf4dccae35.setIcon(beautify_icon_1e486b74fa677151ef2fe92f16ca20a3);
+            
+    
+            var marker_d180af66716623a9af3fb07dd39e56de = L.marker(
+                [-1.991937078, 30.21201106],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_0d0a35e758f4923194314fc19a9bab12 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_d180af66716623a9af3fb07dd39e56de.setIcon(beautify_icon_0d0a35e758f4923194314fc19a9bab12);
+        
+    
+        var popup_ed45031e33a24d4cfe4a178e84cf9e9c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89ceac7fa07f03febda339021070875e = $(`<div id="html_89ceac7fa07f03febda339021070875e" style="width: 100.0%; height: 100.0%;">MASAKA HOSPITAL<br>Health facility<br>Kigali, Rwanda</div>`)[0];
+                popup_ed45031e33a24d4cfe4a178e84cf9e9c.setContent(html_89ceac7fa07f03febda339021070875e);
+            
+        
+
+        marker_d180af66716623a9af3fb07dd39e56de.bindPopup(popup_ed45031e33a24d4cfe4a178e84cf9e9c)
+        ;
+
+        
+    
+    
+                marker_d180af66716623a9af3fb07dd39e56de.setIcon(beautify_icon_0d0a35e758f4923194314fc19a9bab12);
+            
+    
+            var marker_d97b952602af71564a29e400bfa0c6ce = L.marker(
+                [-1.958843453, 30.10731397],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_5369b85092ce59e427d375d68b8578b4 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "blue",
+  "textColor": "#007799",
+  "backgroundColor": "blue",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_d97b952602af71564a29e400bfa0c6ce.setIcon(beautify_icon_5369b85092ce59e427d375d68b8578b4);
+        
+    
+        var popup_1fde573cb90f27b49c1302d293ea03f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3254f3a1c0de2b19ceabdf02c3ec006f = $(`<div id="html_3254f3a1c0de2b19ceabdf02c3ec006f" style="width: 100.0%; height: 100.0%;">Kigali Metropolitan Police Headquarters<br>Police Station<br>KN 3, Rd, Nyarugenge</div>`)[0];
+                popup_1fde573cb90f27b49c1302d293ea03f1.setContent(html_3254f3a1c0de2b19ceabdf02c3ec006f);
+            
+        
+
+        marker_d97b952602af71564a29e400bfa0c6ce.bindPopup(popup_1fde573cb90f27b49c1302d293ea03f1)
+        ;
+
+        
+    
+    
+                marker_d97b952602af71564a29e400bfa0c6ce.setIcon(beautify_icon_5369b85092ce59e427d375d68b8578b4);
+            
+    
+            var marker_e809c3576cf3e75336c2f5eea0be48c5 = L.marker(
+                [-1.936207113, 30.08424105],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_352df3bce6c93edad4161b7aff14da1d = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "blue",
+  "textColor": "#007799",
+  "backgroundColor": "blue",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_e809c3576cf3e75336c2f5eea0be48c5.setIcon(beautify_icon_352df3bce6c93edad4161b7aff14da1d);
+        
+    
+        var popup_4c2e7685135cc097f8ca884a43b0fe1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ac39dc85b1306540ba9d2eb8ffd99ef = $(`<div id="html_4ac39dc85b1306540ba9d2eb8ffd99ef" style="width: 100.0%; height: 100.0%;">Kacyiru Police Station<br>Police Station<br>9 KG 550 St, Kigali, Rwanda</div>`)[0];
+                popup_4c2e7685135cc097f8ca884a43b0fe1e.setContent(html_4ac39dc85b1306540ba9d2eb8ffd99ef);
+            
+        
+
+        marker_e809c3576cf3e75336c2f5eea0be48c5.bindPopup(popup_4c2e7685135cc097f8ca884a43b0fe1e)
+        ;
+
+        
+    
+    
+                marker_e809c3576cf3e75336c2f5eea0be48c5.setIcon(beautify_icon_352df3bce6c93edad4161b7aff14da1d);
+            
+    
+            var marker_f95eca7692a4909619ae20eacf10e7e0 = L.marker(
+                [-1.953177977, 30.09303121],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_85ae3400f5f167afc4034bf11cb6ae9d = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "purple",
+  "textColor": "#007799",
+  "backgroundColor": "purple",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_f95eca7692a4909619ae20eacf10e7e0.setIcon(beautify_icon_85ae3400f5f167afc4034bf11cb6ae9d);
+        
+    
+        var popup_f9e4a4fceed734c021b9ea7518583818 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8eda63d35193a09c2e352d979f93025 = $(`<div id="html_b8eda63d35193a09c2e352d979f93025" style="width: 100.0%; height: 100.0%;">Bank of Kigal<br>Bank<br>KG 7 Ave, Kigali, Rwanda</div>`)[0];
+                popup_f9e4a4fceed734c021b9ea7518583818.setContent(html_b8eda63d35193a09c2e352d979f93025);
+            
+        
+
+        marker_f95eca7692a4909619ae20eacf10e7e0.bindPopup(popup_f9e4a4fceed734c021b9ea7518583818)
+        ;
+
+        
+    
+    
+                marker_f95eca7692a4909619ae20eacf10e7e0.setIcon(beautify_icon_85ae3400f5f167afc4034bf11cb6ae9d);
+            
+    
+            var marker_4e0e5bcab9444f97a47241cce2837078 = L.marker(
+                [-1.958976375, 30.11034279],
+                {
+}
+            ).addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            var beautify_icon_c2b86f2a9acf5b6c0e59af647f4f28c4 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "purple",
+  "textColor": "#007799",
+  "backgroundColor": "purple",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_4e0e5bcab9444f97a47241cce2837078.setIcon(beautify_icon_c2b86f2a9acf5b6c0e59af647f4f28c4);
+        
+    
+        var popup_816484903b484b6146b7ef74745aa808 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5cebe51373371e0c7603ffbb9d020d7 = $(`<div id="html_e5cebe51373371e0c7603ffbb9d020d7" style="width: 100.0%; height: 100.0%;">Equity Bank Rwanda<br>Bank<br>KG 11 Ave, Kigali, Rwanda</div>`)[0];
+                popup_816484903b484b6146b7ef74745aa808.setContent(html_e5cebe51373371e0c7603ffbb9d020d7);
+            
+        
+
+        marker_4e0e5bcab9444f97a47241cce2837078.bindPopup(popup_816484903b484b6146b7ef74745aa808)
+        ;
+
+        
+    
+    
+                marker_4e0e5bcab9444f97a47241cce2837078.setIcon(beautify_icon_c2b86f2a9acf5b6c0e59af647f4f28c4);
+            
+    
+            tile_layer_2560481245b86acf91ba82ef16a883f2.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            tile_layer_a1cea25331978d4cb74b59674a8e1570.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            tile_layer_45c0e0d3ed6dc997565cf0174a16bf4a.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+                marker_5cd22322f1b8e0a6852b6715cd92bd4a.setIcon(beautify_icon_4ee5171fd157e0905ed8e2d71551d6fe);
+            
+    
+                marker_51ebcfd430c16248bb5155f2ed5a366e.setIcon(beautify_icon_e5879a0664ea8d2d1bab2ee156c5bf05);
+            
+    
+                marker_573000c8ca5e7e1f88163711eb2ce5d7.setIcon(beautify_icon_11fdb28236264730b4238ab5add0530f);
+            
+    
+                marker_0938aa98df24f921ae20380855e425ea.setIcon(beautify_icon_dd3cb1b3c425baf76a45eb55ea682123);
+            
+    
+                marker_1fdb2b587993e75208a7c43d6bb80f96.setIcon(beautify_icon_4eb7cfad7f5b6a6e39b55b3d5ea77707);
+            
+    
+                marker_90c50ffd7ebf154770958bc4808b6c37.setIcon(beautify_icon_795d89d7fd987086893f38fe4df8cb23);
+            
+    
+                marker_65d23075079eeced05ce6caf4dccae35.setIcon(beautify_icon_1e486b74fa677151ef2fe92f16ca20a3);
+            
+    
+                marker_d180af66716623a9af3fb07dd39e56de.setIcon(beautify_icon_0d0a35e758f4923194314fc19a9bab12);
+            
+    
+                marker_d97b952602af71564a29e400bfa0c6ce.setIcon(beautify_icon_5369b85092ce59e427d375d68b8578b4);
+            
+    
+                marker_e809c3576cf3e75336c2f5eea0be48c5.setIcon(beautify_icon_352df3bce6c93edad4161b7aff14da1d);
+            
+    
+                marker_f95eca7692a4909619ae20eacf10e7e0.setIcon(beautify_icon_85ae3400f5f167afc4034bf11cb6ae9d);
+            
+    
+                marker_4e0e5bcab9444f97a47241cce2837078.setIcon(beautify_icon_c2b86f2a9acf5b6c0e59af647f4f28c4);
+            
+    
+            var map_div = L.map(
+                "map_div",
+                {
+                    center: [-1.9445401885863784, 30.08988685088784],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_div_0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_2560481245b86acf91ba82ef16a883f2.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            tile_layer_div_0.addTo(map_div);
+        
+    
+            var tile_layer_div_1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a1cea25331978d4cb74b59674a8e1570.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            tile_layer_div_1.addTo(map_div);
+        
+    
+            var tile_layer_div_2 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_45c0e0d3ed6dc997565cf0174a16bf4a.addTo(map_de2b01a925747853b84de3f24c44199d);
+        
+    
+            tile_layer_div_2.addTo(map_div);
+        
+    
+            var layer_control_div_3_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_div_1,
+                    "Esri Satellite" : tile_layer_div_2,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_div_3 = L.control.layers(
+                layer_control_div_3_layers.base_layers,
+                layer_control_div_3_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_div);
+
+        
+    
+            var marker_div_4 = L.marker(
+                [-1.955970749, 30.06043975],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_4_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_4.setIcon(beautify_icon_div_4_0);
+        
+    
+        var popup_div_4_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_945d3bd9addaca8e47ad1adc39aecc0b = $(`<div id="html_945d3bd9addaca8e47ad1adc39aecc0b" style="width: 100.0%; height: 100.0%;">CHUK (University Teaching Hospital)<br>Health facility<br>KN 4 Ave, Kigali, Rwanda</div>`)[0];
+                popup_div_4_1.setContent(html_945d3bd9addaca8e47ad1adc39aecc0b);
+            
+        
+
+        marker_div_4.bindPopup(popup_div_4_1)
+        ;
+
+        
+    
+    
+                marker_div_4.setIcon(beautify_icon_div_4_0);
+            
+    
+                marker_div_4.setIcon(beautify_icon_div_4_0);
+            
+    
+                marker_div_4.setIcon(beautify_icon_div_4_0);
+            
+    
+            var marker_div_5 = L.marker(
+                [-1.933194477, 30.07475407],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_5_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_5.setIcon(beautify_icon_div_5_0);
+        
+    
+        var popup_div_5_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33275f0a037572610d0826389d36e720 = $(`<div id="html_33275f0a037572610d0826389d36e720" style="width: 100.0%; height: 100.0%;">KACYIRU HOSPITAL<br>Health facility<br>KN 8 Ave, Kigali, Rwanda</div>`)[0];
+                popup_div_5_1.setContent(html_33275f0a037572610d0826389d36e720);
+            
+        
+
+        marker_div_5.bindPopup(popup_div_5_1)
+        ;
+
+        
+    
+    
+                marker_div_5.setIcon(beautify_icon_div_5_0);
+            
+    
+                marker_div_5.setIcon(beautify_icon_div_5_0);
+            
+    
+                marker_div_5.setIcon(beautify_icon_div_5_0);
+            
+    
+            var marker_div_6 = L.marker(
+                [-1.936713044, 30.05803851],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_6_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_6.setIcon(beautify_icon_div_6_0);
+        
+    
+        var popup_div_6_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba053eda9aecfba25b5dd480de02e214 = $(`<div id="html_ba053eda9aecfba25b5dd480de02e214" style="width: 100.0%; height: 100.0%;">MUHIMA HOSPITAL<br>Health facility<br>KN 13 St, Kigali, Rwanda</div>`)[0];
+                popup_div_6_1.setContent(html_ba053eda9aecfba25b5dd480de02e214);
+            
+        
+
+        marker_div_6.bindPopup(popup_div_6_1)
+        ;
+
+        
+    
+    
+                marker_div_6.setIcon(beautify_icon_div_6_0);
+            
+    
+                marker_div_6.setIcon(beautify_icon_div_6_0);
+            
+    
+                marker_div_6.setIcon(beautify_icon_div_6_0);
+            
+    
+            var marker_div_7 = L.marker(
+                [-1.930780773, 30.11193853],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_7_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_7.setIcon(beautify_icon_div_7_0);
+        
+    
+        var popup_div_7_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95831c31b9affe1b384485733f319074 = $(`<div id="html_95831c31b9affe1b384485733f319074" style="width: 100.0%; height: 100.0%;">KIBAGABAGA HOSPITAL<br>Health facility<br>KG 19 Ave, Kigali, Rwanda</div>`)[0];
+                popup_div_7_1.setContent(html_95831c31b9affe1b384485733f319074);
+            
+        
+
+        marker_div_7.bindPopup(popup_div_7_1)
+        ;
+
+        
+    
+    
+                marker_div_7.setIcon(beautify_icon_div_7_0);
+            
+    
+                marker_div_7.setIcon(beautify_icon_div_7_0);
+            
+    
+                marker_div_7.setIcon(beautify_icon_div_7_0);
+            
+    
+            var marker_div_8 = L.marker(
+                [-1.978603661, 30.16795712],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_8_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_8.setIcon(beautify_icon_div_8_0);
+        
+    
+        var popup_div_8_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2282d9c57996267016ff54e316b132ae = $(`<div id="html_2282d9c57996267016ff54e316b132ae" style="width: 100.0%; height: 100.0%;">RWANDA MILITARY HOSPITAL<br>Health facility<br>25C9+H57, Kigali, Rwanda</div>`)[0];
+                popup_div_8_1.setContent(html_2282d9c57996267016ff54e316b132ae);
+            
+        
+
+        marker_div_8.bindPopup(popup_div_8_1)
+        ;
+
+        
+    
+    
+                marker_div_8.setIcon(beautify_icon_div_8_0);
+            
+    
+                marker_div_8.setIcon(beautify_icon_div_8_0);
+            
+    
+                marker_div_8.setIcon(beautify_icon_div_8_0);
+            
+    
+            var marker_div_9 = L.marker(
+                [-1.943636019, 30.09528767],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_9_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_9.setIcon(beautify_icon_div_9_0);
+        
+    
+        var popup_div_9_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a1c335ab5fb71a78ea14d35d15bf4f0 = $(`<div id="html_0a1c335ab5fb71a78ea14d35d15bf4f0" style="width: 100.0%; height: 100.0%;">KING FAISAL HOSPITAL<br>Health facility<br>KG 544 St, Kigali, Rwanda</div>`)[0];
+                popup_div_9_1.setContent(html_0a1c335ab5fb71a78ea14d35d15bf4f0);
+            
+        
+
+        marker_div_9.bindPopup(popup_div_9_1)
+        ;
+
+        
+    
+    
+                marker_div_9.setIcon(beautify_icon_div_9_0);
+            
+    
+                marker_div_9.setIcon(beautify_icon_div_9_0);
+            
+    
+                marker_div_9.setIcon(beautify_icon_div_9_0);
+            
+    
+            var marker_div_10 = L.marker(
+                [-1.954468536, 30.16888575],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_10_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_10.setIcon(beautify_icon_div_10_0);
+        
+    
+        var popup_div_10_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9b6c2feece9daacc0417dd307083d70 = $(`<div id="html_e9b6c2feece9daacc0417dd307083d70" style="width: 100.0%; height: 100.0%;">NDERA HOSPITAL<br>Health facility<br>25W9+4FQ, Kigali, Rwanda</div>`)[0];
+                popup_div_10_1.setContent(html_e9b6c2feece9daacc0417dd307083d70);
+            
+        
+
+        marker_div_10.bindPopup(popup_div_10_1)
+        ;
+
+        
+    
+    
+                marker_div_10.setIcon(beautify_icon_div_10_0);
+            
+    
+                marker_div_10.setIcon(beautify_icon_div_10_0);
+            
+    
+                marker_div_10.setIcon(beautify_icon_div_10_0);
+            
+    
+            var marker_div_11 = L.marker(
+                [-1.991937078, 30.21201106],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_11_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "red",
+  "textColor": "#007799",
+  "backgroundColor": "red",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_11.setIcon(beautify_icon_div_11_0);
+        
+    
+        var popup_div_11_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_89ceac7fa07f03febda339021070875e = $(`<div id="html_89ceac7fa07f03febda339021070875e" style="width: 100.0%; height: 100.0%;">MASAKA HOSPITAL<br>Health facility<br>Kigali, Rwanda</div>`)[0];
+                popup_div_11_1.setContent(html_89ceac7fa07f03febda339021070875e);
+            
+        
+
+        marker_div_11.bindPopup(popup_div_11_1)
+        ;
+
+        
+    
+    
+                marker_div_11.setIcon(beautify_icon_div_11_0);
+            
+    
+                marker_div_11.setIcon(beautify_icon_div_11_0);
+            
+    
+                marker_div_11.setIcon(beautify_icon_div_11_0);
+            
+    
+            var marker_div_12 = L.marker(
+                [-1.958843453, 30.10731397],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_12_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "blue",
+  "textColor": "#007799",
+  "backgroundColor": "blue",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_12.setIcon(beautify_icon_div_12_0);
+        
+    
+        var popup_div_12_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3254f3a1c0de2b19ceabdf02c3ec006f = $(`<div id="html_3254f3a1c0de2b19ceabdf02c3ec006f" style="width: 100.0%; height: 100.0%;">Kigali Metropolitan Police Headquarters<br>Police Station<br>KN 3, Rd, Nyarugenge</div>`)[0];
+                popup_div_12_1.setContent(html_3254f3a1c0de2b19ceabdf02c3ec006f);
+            
+        
+
+        marker_div_12.bindPopup(popup_div_12_1)
+        ;
+
+        
+    
+    
+                marker_div_12.setIcon(beautify_icon_div_12_0);
+            
+    
+                marker_div_12.setIcon(beautify_icon_div_12_0);
+            
+    
+                marker_div_12.setIcon(beautify_icon_div_12_0);
+            
+    
+            var marker_div_13 = L.marker(
+                [-1.936207113, 30.08424105],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_13_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "blue",
+  "textColor": "#007799",
+  "backgroundColor": "blue",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_13.setIcon(beautify_icon_div_13_0);
+        
+    
+        var popup_div_13_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ac39dc85b1306540ba9d2eb8ffd99ef = $(`<div id="html_4ac39dc85b1306540ba9d2eb8ffd99ef" style="width: 100.0%; height: 100.0%;">Kacyiru Police Station<br>Police Station<br>9 KG 550 St, Kigali, Rwanda</div>`)[0];
+                popup_div_13_1.setContent(html_4ac39dc85b1306540ba9d2eb8ffd99ef);
+            
+        
+
+        marker_div_13.bindPopup(popup_div_13_1)
+        ;
+
+        
+    
+    
+                marker_div_13.setIcon(beautify_icon_div_13_0);
+            
+    
+                marker_div_13.setIcon(beautify_icon_div_13_0);
+            
+    
+                marker_div_13.setIcon(beautify_icon_div_13_0);
+            
+    
+            var marker_div_14 = L.marker(
+                [-1.953177977, 30.09303121],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_14_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "purple",
+  "textColor": "#007799",
+  "backgroundColor": "purple",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_14.setIcon(beautify_icon_div_14_0);
+        
+    
+        var popup_div_14_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8eda63d35193a09c2e352d979f93025 = $(`<div id="html_b8eda63d35193a09c2e352d979f93025" style="width: 100.0%; height: 100.0%;">Bank of Kigal<br>Bank<br>KG 7 Ave, Kigali, Rwanda</div>`)[0];
+                popup_div_14_1.setContent(html_b8eda63d35193a09c2e352d979f93025);
+            
+        
+
+        marker_div_14.bindPopup(popup_div_14_1)
+        ;
+
+        
+    
+    
+                marker_div_14.setIcon(beautify_icon_div_14_0);
+            
+    
+                marker_div_14.setIcon(beautify_icon_div_14_0);
+            
+    
+                marker_div_14.setIcon(beautify_icon_div_14_0);
+            
+    
+            var marker_div_15 = L.marker(
+                [-1.958976375, 30.11034279],
+                {
+}
+            ).addTo(map_div);
+        
+    
+            var beautify_icon_div_15_0 = new L.BeautifyIcon.icon(
+                {
+  "icon": "tent",
+  "iconShape": "circle",
+  "borderWidth": 3,
+  "borderColor": "purple",
+  "textColor": "#007799",
+  "backgroundColor": "purple",
+  "innerIconStyle": "",
+  "spin": false,
+  "isAlphaNumericIcon": false,
+}
+            )
+            marker_div_15.setIcon(beautify_icon_div_15_0);
+        
+    
+        var popup_div_15_1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e5cebe51373371e0c7603ffbb9d020d7 = $(`<div id="html_e5cebe51373371e0c7603ffbb9d020d7" style="width: 100.0%; height: 100.0%;">Equity Bank Rwanda<br>Bank<br>KG 11 Ave, Kigali, Rwanda</div>`)[0];
+                popup_div_15_1.setContent(html_e5cebe51373371e0c7603ffbb9d020d7);
+            
+        
+
+        marker_div_15.bindPopup(popup_div_15_1)
+        ;
+
+        
+    
+    
+                marker_div_15.setIcon(beautify_icon_div_15_0);
+            
+    
+                marker_div_15.setIcon(beautify_icon_div_15_0);
+            
+    
+                marker_div_15.setIcon(beautify_icon_div_15_0);
+            
+</script>
+</html>
